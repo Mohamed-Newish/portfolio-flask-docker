@@ -125,4 +125,4 @@ This project includes a GitHub Actions pipeline that:
 DevOps Engineer — Chemnitz, Germany
 
 GitHub: [https://github.com/Mohamed-Newish](https://github.com/Mohamed-Newish)  
-LinkedIn: [https://www.linkedin.com/in/mohamed-newish-8470a5395](https://www.linkedin.com/in/mohamed-newish-8470a5395)
+LinkedIn: [https://www.linkedin.com/in/mohamed-newish](https://www.linkedin.com/in/mohamed-newish)

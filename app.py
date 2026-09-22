@@ -339,7 +339,7 @@ PAGE = '''
             <div class="social-links">
                 <a href="https://github.com/Mohamed-Newish" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="mailto:mohamedsayed2646@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/mohamed-newish-8470a5395/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-newish/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
             <p>&copy; 2026 Mohamed Newish · Built with Flask, served by Gunicorn in a Docker container.</p>
         </div>
