@@ -9,7 +9,7 @@ PAGE = '''
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamed Newish | DevOps Engineer</title>
-    <meta name="description" content="DevOps engineer in Chemnitz, Germany. Docker, Kubernetes (AWS EKS), Helm, Jenkins, GitHub Actions and Terraform.">
+    <meta name="description" content="DevOps engineer in Chemnitz, Germany. Docker, Kubernetes (AWS EKS), Helm, Jenkins, GitHub Actions, ArgoCD and Terraform.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -96,6 +96,13 @@ PAGE = '''
         .project-links a { color:var(--primary); text-decoration:none; font-weight:600; }
         .project-links a:hover { text-decoration:underline; }
 
+        .job-head { display:flex; justify-content:space-between; flex-wrap:wrap; gap:4px 16px; }
+        .job-head .role { font-weight:600; font-size:1.08rem; }
+        .job-head .when { font-family:'Fira Code',monospace; font-size:.8rem; color:var(--secondary); }
+        .job .org { color:var(--muted); font-size:.92rem; margin-bottom:12px; }
+        .job ul { color:var(--muted); font-size:.93rem; padding-left:20px; }
+        .job li { margin-bottom:5px; }
+
         .two-col { grid-template-columns:1.6fr 1fr; }
         .edu { margin-bottom:18px; }
         .edu .deg { font-weight:600; }
@@ -123,6 +130,7 @@ PAGE = '''
             <nav>
                 <div class="logo">&lt;Mohamed /&gt;</div>
                 <div class="nav-links">
+                    <a href="#experience">Experience</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
                     <a href="#education">Education</a>
@@ -143,8 +151,8 @@ PAGE = '''
             <p>
                 I focus on container orchestration with Docker and Kubernetes (AWS EKS), release
                 management with Helm, and automating deployments through CI/CD pipelines (Jenkins,
-                GitHub Actions) and Infrastructure as Code (Terraform) on AWS. Confident on Linux and
-                with Bash automation, plus working knowledge of Linux and Windows server administration.
+                GitHub Actions), GitOps with ArgoCD and Infrastructure as Code (Terraform) on AWS.
+                Confident on Linux and with Bash automation.
             </p>
             <div>
                 <a href="#projects" class="btn"><i class="fas fa-folder-open"></i> View projects</a>
@@ -157,7 +165,27 @@ PAGE = '''
             </div>
             <div class="meta">
                 <span><i class="fas fa-location-dot"></i> Chemnitz, Germany</span>
-                <span><i class="fas fa-circle-check"></i> Open to DevOps · Platform · SRE roles</span>
+                <span><i class="fas fa-circle-check"></i> Open to working-student and full-time roles · DevOps · Cloud · Platform</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-sub">Where the pipelines run for real.</p>
+            <div class="card job">
+                <div class="job-head">
+                    <span class="role">IT Assistant – DevOps &amp; Infrastructure</span>
+                    <span class="when">05/2026 – 11/2026</span>
+                </div>
+                <div class="org">Ambos Security GmbH · Dohna, Germany · part-time, 10 h/week</div>
+                <ul>
+                    <li>Containerised and deployed services on on-prem infrastructure (Synology NAS and a dedicated server) with Docker and Docker Compose</li>
+                    <li>Automated build and delivery with GitHub Actions, backed by a self-operated container registry</li>
+                    <li>Operated an internal PKI with step-ca – certificate issuance and renewal securing service-to-service communication</li>
+                    <li>Release and update processes for productive operation</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -170,64 +198,55 @@ PAGE = '''
                 <div class="card">
                     <h3><i class="fas fa-cubes"></i> Containers &amp; orchestration</h3>
                     <div class="tags">
-                        <span class="tag">Docker</span><span class="tag">Docker Compose</span>
-                        <span class="tag">Kubernetes</span><span class="tag">AWS EKS</span>
-                        <span class="tag">Helm</span><span class="tag">Ingress</span>
-                        <span class="tag">Secrets</span>
+                        <span class="tag">Docker</span><span class="tag">Docker Compose</span><span class="tag">Kubernetes</span><span class="tag">AWS EKS</span><span class="tag">Helm</span>
                     </div>
                 </div>
                 <div class="card">
                     <h3><i class="fas fa-rotate"></i> CI/CD &amp; automation</h3>
                     <div class="tags">
-                        <span class="tag">Jenkins</span><span class="tag">GitHub Actions</span>
-                        <span class="tag">Terraform</span><span class="tag">Bash</span>
-                        <span class="tag">Cron</span>
+                        <span class="tag">Jenkins</span><span class="tag">GitHub Actions</span><span class="tag">ArgoCD (GitOps)</span><span class="tag">Terraform</span><span class="tag">Container registry</span><span class="tag">Git &amp; GitHub</span>
                     </div>
                 </div>
                 <div class="card">
                     <h3><i class="fas fa-cloud"></i> Cloud (AWS)</h3>
                     <div class="tags">
-                        <span class="tag">EC2</span><span class="tag">EKS</span>
-                        <span class="tag">VPC</span><span class="tag">Load Balancer</span>
-                        <span class="tag">IAM basics</span>
+                        <span class="tag">EC2</span><span class="tag">EKS</span><span class="tag">VPC</span><span class="tag">Load balancers</span><span class="tag">IAM</span>
                     </div>
                 </div>
                 <div class="card">
                     <h3><i class="fas fa-network-wired"></i> Networking</h3>
                     <div class="tags">
-                        <span class="tag">TCP/IP</span><span class="tag">DNS</span>
-                        <span class="tag">DHCP</span><span class="tag">HTTP/HTTPS</span>
-                        <span class="tag">NGINX Ingress</span>
+                        <span class="tag">TCP/IP</span><span class="tag">DNS</span><span class="tag">DHCP</span><span class="tag">HTTP/HTTPS</span><span class="tag">NGINX Ingress</span><span class="tag">Reverse proxy</span>
                     </div>
                 </div>
                 <div class="card">
                     <h3><i class="fas fa-server"></i> Systems &amp; administration</h3>
                     <div class="tags">
-                        <span class="tag">Linux (Ubuntu/Debian)</span><span class="tag">Users &amp; permissions</span>
-                        <span class="tag">Logging</span><span class="tag">Windows Server</span>
-                        <span class="tag">Active Directory</span><span class="tag">GPO</span>
+                        <span class="tag">Linux (Ubuntu/Debian)</span><span class="tag">Bash automation</span><span class="tag">Cron</span><span class="tag">systemd</span><span class="tag">Logging</span><span class="tag">Troubleshooting</span>
                     </div>
                 </div>
                 <div class="card">
                     <h3><i class="fas fa-chart-line"></i> Monitoring &amp; databases</h3>
                     <div class="tags">
-                        <span class="tag">Prometheus</span><span class="tag">Grafana</span>
-                        <span class="tag">PostgreSQL</span><span class="tag">SQL Server basics</span>
+                        <span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">PostgreSQL</span><span class="tag">SQL Server basics</span>
                     </div>
                 </div>
                 <div class="card">
-                    <h3><i class="fas fa-code"></i> Programming &amp; scripting</h3>
+                    <h3><i class="fas fa-code"></i> Programming &amp; tools</h3>
                     <div class="tags">
-                        <span class="tag">Bash</span><span class="tag">Python</span>
-                        <span class="tag">Go</span><span class="tag">JavaScript</span>
+                        <span class="tag">Bash</span><span class="tag">Python</span><span class="tag">Go</span><span class="tag">JavaScript</span><span class="tag">Vim</span><span class="tag">Postman</span><span class="tag">Claude Code</span><span class="tag">MCP</span>
                     </div>
                 </div>
                 <div class="card">
-                    <h3><i class="fas fa-shield-halved"></i> Security &amp; tools</h3>
+                    <h3><i class="fas fa-shield-halved"></i> Security</h3>
                     <div class="tags">
-                        <span class="tag">OWASP Top 10</span><span class="tag">Input validation</span>
-                        <span class="tag">Authentication</span><span class="tag">Git &amp; GitHub</span>
-                        <span class="tag">Vim</span><span class="tag">Postman</span>
+                        <span class="tag">PKI &amp; certificates</span><span class="tag">step-ca</span><span class="tag">Authentication</span><span class="tag">Input validation</span><span class="tag">OWASP Top 10</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-bug"></i> Application security</h3>
+                    <div class="tags">
+                        <span class="tag">Burp Suite</span><span class="tag">nmap</span><span class="tag">sqlmap</span><span class="tag">ffuf</span><span class="tag">subfinder</span><span class="tag">httpx</span><span class="tag">naabu</span><span class="tag">katana</span><span class="tag">Kali Linux</span>
                     </div>
                 </div>
             </div>
@@ -311,24 +330,29 @@ PAGE = '''
 
     <section id="education">
         <div class="container">
-            <h2 class="section-title">Education &amp; languages</h2>
+            <h2 class="section-title">Education, certification &amp; languages</h2>
             <div class="grid two-col">
                 <div class="card">
                     <div class="edu">
                         <div class="deg">M.Sc. Embedded Systems</div>
                         <div class="org">Chemnitz University of Technology (TU Chemnitz)</div>
-                        <div class="when">2025 – present · Chemnitz, Germany</div>
+                        <div class="when">10/2025 – present · Chemnitz, Germany</div>
                     </div>
                     <div class="edu">
                         <div class="deg">B.Sc. Electrical Engineering</div>
                         <div class="org">Faculty of Engineering Shoubra, Benha University</div>
-                        <div class="when">Benha, Egypt</div>
+                        <div class="when">09/2019 – 04/2024 · Benha, Egypt</div>
+                    </div>
+                    <div class="edu" style="margin-bottom:0">
+                        <div class="deg">Certified AppSec Practitioner (CAP)</div>
+                        <div class="org">The SecOps Group</div>
+                        <div class="when">02/2023</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="lang"><b>English</b><span>Fluent</span></div>
                     <div class="lang"><b>Arabic</b><span>Native</span></div>
-                    <div class="lang" style="border-bottom:0"><b>German</b><span>B1</span></div>
+                    <div class="lang" style="border-bottom:0"><b>German</b><span>B2</span></div>
                 </div>
             </div>
         </div>
@@ -395,7 +419,7 @@ def api():
         "role": "DevOps Engineer",
         "location": "Chemnitz, Germany",
         "status": "active",
-        "skills": ["Docker", "Kubernetes", "Helm", "Jenkins", "GitHub Actions", "Terraform", "AWS"],
+        "skills": ["Docker", "Kubernetes", "Helm", "Jenkins", "GitHub Actions", "ArgoCD", "Terraform", "AWS"],
         "projects": [
             "journey-app-devops",
             "portfolio-flask-docker",
@@ -411,7 +435,7 @@ def health():
         "status": "healthy",
         "service": "portfolio",
         "uptime": "running",
-        "version": "2.0.0"
+        "version": "2.1.0"
     }), 200
 
 
